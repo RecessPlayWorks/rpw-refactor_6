@@ -9,9 +9,9 @@ import React from 'react'
 
 const Indexpage = () => {
     return(
-        <Layout>
+        <div>
             <h1>Test #1</h1>
-        </Layout>
+        </div>
     )
 }
 
