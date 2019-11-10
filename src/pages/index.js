@@ -1,7 +1,7 @@
 import React from 'react'
 // import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import LandingCollageBG from '../components/subcomponents/LandingCollage'
+import LandingCollage from '../components/LandingCollage'
 
 
 
@@ -10,8 +10,7 @@ import LandingCollageBG from '../components/subcomponents/LandingCollage'
 const Indexpage = () => {
     return(
         <Layout>
-        <LandingCollageBG/>
-
+            <LandingCollage/>
         </Layout>
     )
 }
