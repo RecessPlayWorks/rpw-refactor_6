@@ -1,8 +1,10 @@
 import React from 'react'
-// import Footer from './footer'
+import Footer from './footer'
 // import Header from './header'
 
+/***** !!!! CSS RESET !!!! *****/
 import '../styles/index.scss';
+
 import layoutStyles from './layout.module.scss';
 
 const Layout = (props) => {
@@ -12,7 +14,7 @@ const Layout = (props) => {
             <div className={layoutStyles.content} >
             {props.children}
             </div>
-            {/* <Footer/> */}
+            <Footer/>
         </div>
     )
 }
