@@ -22,6 +22,12 @@ module.exports = {
     },
     'gatsby-plugin-sharp',
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || null,
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
