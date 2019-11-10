@@ -1,5 +1,9 @@
 /* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
 
+
+/************GLOBAL RESET**********/
+/******( cf index.modules.scss )******/
+/************************************/
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -45,6 +49,7 @@ html {
   a {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
+    text-decoration: none;
   }
   a:active,
   a:hover {
