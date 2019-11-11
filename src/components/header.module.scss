@@ -121,7 +121,7 @@ label {
     }
     .header {
         display: grid;  
-        grid-template-columns: 1fr auto minmax(640px, 3fr) 1fr;        
+        grid-template-columns: 1fr auto minmax(540px, 2fr) 1fr;        
         .title {
             margin-bottom: 0;
             margin-top: 0.5vh;
@@ -150,7 +150,7 @@ label {
                 
                 .nav-list-item {
                     margin-top: 2.5vh;
-                    margin-left: 2rem;
+                    margin-left: 1rem;
                     a {
                         opacity: 1;
                         font-size: 1.1rem;

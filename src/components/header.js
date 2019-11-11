@@ -24,6 +24,7 @@ const Header = () => {
       <h1 id={headerStyles.logoTitle} className={headerStyles.title}>
         <NavLink to="/" textContent={title} />
       </h1>
+      
       <nav className={headerStyles.topNav}>
         <ul className={headerStyles.navList}>
           <li className={headerStyles.navListItem}>
@@ -40,6 +41,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+
     </header>
   )
 }
