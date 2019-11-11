@@ -2,7 +2,8 @@
 module.exports = {
   siteMetadata: {
     title: "RecessPlayWorks",
-    author: "RecessPlayworks.com"
+    author: "RecessPlayworks.com",
+    description: "A place to rest, to play and to work."
   },
   plugins: [
     {
@@ -12,6 +13,7 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
     },
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-source-filesystem',
