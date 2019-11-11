@@ -13,7 +13,7 @@ const Landing = () => (
     <main className={landingStyles.landingContainer}>
         <section className={landingStyles.landingContentContainer}>
             <img src={rpwLogo} alt="recessplayworks logo" />
-             <div className={landingStyles.textContainer}>
+            <div className={landingStyles.textContainer}>
                 <h2>It's time for Recess!</h2>
                 <p>Recess Playworks is going to be a unique place for modern families managing the work-life balance.</p>
                 <p>For the adults we will have a chic lounge, meeting rooms, a podcast room and phone rooms.</p>
