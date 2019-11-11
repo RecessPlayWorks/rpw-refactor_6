@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import blogStyles from './blog.module.scss'
 
 const BlogPage = () => {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
       allContentfulBlogPost (
         sort: {
@@ -22,23 +22,26 @@ const BlogPage = () => {
       }
       }
       `)
-    //   const {title, date} = data.site.siteMetadata;
-    return (
-        <Layout>
-            <h1>Blog</h1>
-            <ol className={blogStyles.posts}>
-                {data.allContentfulBlogPost.edges.map((item, idx) => (
-                    <li  className={blogStyles.post} key={idx}>
-                        <Link to={`/blog/${item.node.slug}`}>
-                        <h2>{item.node.title}</h2>
-                        <p>{item.node.publishedDate}</p>
-                        </Link>
-                    </li>
-                ))}
-                
-            </ol>
-        </Layout>
-    )
+  //   const {title, date} = data.site.siteMetadata;
+  return (
+    <Layout>
+      {/* PROBLEMATIC styling */}
+      <main className={blogStyles.blogContainer}>
+        <h1>Blog</h1>
+        <ol className={blogStyles.posts}>
+          {data.allContentfulBlogPost.edges.map((item, idx) => (
+            <li className={blogStyles.post} key={idx}>
+              <Link to={`/blog/${item.node.slug}`}>
+                <h2>{item.node.title}</h2>
+                <p>{item.node.publishedDate}</p>
+              </Link>
+            </li>
+          ))}
+
+        </ol>
+      </main>
+    </Layout>
+  )
 }
 
 export default BlogPage;

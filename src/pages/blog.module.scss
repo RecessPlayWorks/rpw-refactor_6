@@ -1,3 +1,15 @@
+@import '../styles/variables.css';
+
+.blog-container {
+    background: var(--primary-color);
+    grid-row: 2;
+    text-align: left;
+    width: 100vw;
+    height: 200vh;
+    min-height: 100vh;
+    border: 5px dashed lightseagreen;
+}
+
 .posts {
     list-style-type: none;
     margin: 0;

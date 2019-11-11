@@ -1,0 +1,11 @@
+@import '../styles/variables.css';
+
+.about-container {
+    background: var(--rudy-grey);
+    grid-row: 2;
+    text-align: center;
+    width: 100vw;
+    height: 200vh;
+    min-height: 100vh;
+    border: 5px dashed green;
+}

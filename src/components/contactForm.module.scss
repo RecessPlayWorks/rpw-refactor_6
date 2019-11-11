@@ -1,0 +1,62 @@
+@import '../styles/variables.css';
+
+.footer {
+    background: #ec008b;
+    background: var(--rudy-blue);
+    color: var(--rudy-text);
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+/*************************************************/
+/************* iPad and larger  ******************/
+/*************************************************/
+
+@media screen and (min-width: 768px) {
+    
+}
+
+
+/*
+const StyledContactForm = styled.form`
+  width: 90vw;
+  margin: 2vh auto;
+  
+  & input[type=text], input[type=email], textarea {
+    font-size: 1.1rem;
+    font-weight: 100;
+  }
+  p {
+    text-align: left;
+    width: 90vw;
+  }
+  label {
+    font-size: 0.9rem;
+  }
+  input, textarea {
+    display: block;
+    height: 8vh;
+  }
+
+ textarea {
+    height: 20vh;
+ }
+ p:last-of-type {
+   text-align: center;
+ }
+ button.btn-submit {
+    width: 40vw;
+    height: 8vh;
+    margin: 2vh auto;
+    background: #6c8a6c;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.3rem;
+ }
+`;
+*/

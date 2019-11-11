@@ -2,21 +2,22 @@ import React from 'react'
 
 // import GMap from '../components/GMap'
 
-
 import Layout from '../components/layout'
-import rpwLogo from '../images/rpw-main-icon-300.jpg';
+// import rpwLogo from '../images/rpw-main-icon-300.jpg';
 import contactStyles from './contact.module.scss'
 
 
 const ContactPage = () => {
     return (
         <Layout>
-            <div className={contactStyles.contactContainer}>
+           <main className={contactStyles.contactContainer}>
+                <section className={contactStyles.contactContentContainer}>
                 <h1>Contact!</h1>
-                <div className={contactStyles.contactLogoContainer}>
+                {/* <div className={contactStyles.contactLogoContainer}>
                     <img src={rpwLogo} alt="landing logo" />
-                </div>
-            </div>
+                </div> */}
+                </section>
+            </main>
         </Layout>
     )
 }

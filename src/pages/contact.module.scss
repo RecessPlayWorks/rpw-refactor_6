@@ -1,12 +1,17 @@
+@import '../styles/variables.css';
+
+
 .contact-container {
-    width: 100vw;
-  text-align: center;
-  margin: 0 auto;
+  grid-row: 2;
+  text-align: left;
+  width: 100vw;
+  min-height: 100vh;
+  border: 5px dashed coral;
   background: #e4d8ee;
-  .contact-logo-container {
-    margin: 2vh auto;
-    img {
-        width: 100%;
-    }
-  }
+  // .contact-logo-container {
+  //   margin: 2vh auto;
+  //   img {
+  //       width: 100%;
+  //   }
+  // }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import NavLink from './NavLink';
 
 import rpwLogo from '../images/rpw-main-icon-300.jpg';
