@@ -37,9 +37,10 @@ main.landing-container {
 
         section.landing-content-container { /* wraps logo, txtbox & button */
         width: 100%;
-        margin-top: 12vh;
+        margin: 12vh auto;
         text-align: center;
         padding: 2vh auto;
+        
         img {
             width: 50%;
             margin: 2vh auto;
@@ -47,7 +48,7 @@ main.landing-container {
         .text-container {
             background: var(--rudy-pink-trans);
             border-radius: 10px;
-            width: 90vw;
+            width: 90%;
             margin: 8vh auto;            
             text-align: left;
             padding: 1vh 4vw;
@@ -98,10 +99,20 @@ main.landing-container {
         background-size: $picW $picH,$picW $picH,$picW $picH,$picW $picH,$picW $picH;
 
         section.landing-content-container { /* wraps logo, txtbox & button */
-            width: 100%;
+            width: 80%;
             margin-top: 12vh;
             text-align: center;
             padding: 2vh auto;
+            .text-container {
+                h2 {
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 2rem;
+                    // margin-bottom: 0;
+                    line-height: 1.3;
+                }
+            }
             img {
                 width: 20%;
                 margin: 2vh auto;
