@@ -4,20 +4,6 @@ https://nodejs.org/dist/latest-v12.x/docs/api/path.html#path_path_basename_path_
 
 const path = require("path");
 
-/* This is used to create slugs for Markdown posts &
-  is not needed with contentful integration */
-
-// module.exports.onCreateNode = ({ node, actions }) => {
-//     const { createNodeField } = actions
-//     if (node.internal.type === 'MarkdownRemark') {
-//         const slug = path.basename(node.fileAbsolutePath, '.md');
-//         createNodeField({
-//             node,
-//             name: 'slug',
-//             value: slug
-//         })
-//     }
-// }
 
 /* this fetches contful slugs */
 module.exports.createPages = async ({ graphql, actions }) => {
