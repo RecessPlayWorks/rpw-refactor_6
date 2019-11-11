@@ -13,3 +13,4 @@ TODO: https://www.gatsbyjs.org/docs/add-seo-component/
 
 Fix SEO COMP
 
+TODO: fix collage in ipad views

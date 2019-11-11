@@ -33,12 +33,9 @@ nav.top-nav {
 h1 {
     color: #777;
     size: 12rem;
-  
 }
 
-.title {
-    // border: 3px dashed brown;
-}
+
 .nav-list {
     list-style-type: none;
 }
@@ -131,7 +128,7 @@ label {
             margin-left: 1vw;
             a {
                 grid-column: 2/ 3;
-               color: white;
+               color: #3d3d3d;
                font-size: 2rem;
            }
         }

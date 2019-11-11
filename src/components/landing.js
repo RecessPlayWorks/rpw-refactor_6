@@ -1,5 +1,4 @@
 import React from 'react';
-// import LandingCollage from './collage'
 
 
 import NavLink from './NavLink';
@@ -22,7 +21,7 @@ const Landing = () => (
                 <p>Life gets busy and everyone needs a recess.</p>
                 <p>Come join our growing list of people who want to be the first to know all the details!</p>
             </div>
-          <button>
+            <button>
                 <NavLink to="/contact/" className="cta-join" activeClassName="" textContent="Contact" />
             </button> 
         </section>

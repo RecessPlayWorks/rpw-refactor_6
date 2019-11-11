@@ -21,7 +21,7 @@ const Header = () => {
         <span></span>
       </label>
       <input className={headerStyles.toggler} id="toggler" type="checkbox" name="toggler" />
-      <h1 className={headerStyles.title}>
+      <h1 id={headerStyles.logoTitle} className={headerStyles.title}>
         <NavLink to="/" textContent={title} />
       </h1>
       <nav className={headerStyles.topNav}>
