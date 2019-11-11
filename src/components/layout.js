@@ -23,9 +23,9 @@ const Layout = ({ children }) => {
                 <meta name={title} description={description} />
             </Helmet>
             <Header/>
-            <div className={layoutStyles.content} >
+            {/* <div className={layoutStyles.content} > */}
             {children}
-            </div>
+            {/* </div> */}
             <Footer/>
         </div>
     )

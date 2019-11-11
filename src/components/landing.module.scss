@@ -1,0 +1,73 @@
+$img1: url('../images/boy.jpg');
+$img2: url('../images/painting.jpg');
+$img3: url('../images/meeting.jpg');
+$img4: url('../images/girlandrobot.jpg');
+$img5: url('../images/twokids.jpg');
+// $img6: url('../images/women.jpg');
+$picW: 50.2vw;
+$picH: 50.3vh;
+
+/* mobile values for bg images height & width*/
+$picWm: 100vw;
+$picHm: 40vh;
+
+/**** header row1 ****/
+/**** main row2 ****/
+/**** footer row3 ****/
+
+main.landing-container {
+    grid-row: 2;
+    text-align: center;
+    width: 100vw;
+    height: 200vh;
+    min-height: 100vh;
+
+    /****collage bg ****/
+    background: 
+    $img2 0 0 no-repeat,
+    $img1 0% 25% no-repeat,
+    $img4 0% 50% no-repeat,
+    $img5 0% 75% no-repeat,
+    $img3 0% 100% no-repeat;
+    background-size: $picWm $picHm;
+
+        section.landing-content-container { /* wraps logo, txtbox & button */
+        width: 100%;
+        margin-top: 12vh;
+        text-align: center;
+        padding: 2vh auto;
+        img {
+            width: 50%;
+            margin: 2vh auto;
+        }
+        .text-container {
+            background: rgba(128, 194, 194, 0.8);
+            border-radius: 10px;
+            width: 90vw;
+            margin: 8vh auto;            
+            text-align: left;
+            padding: 1vh 4vw;
+            color: white;
+            h2 {
+                text-align: center;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+        button {
+            width: 10vw;
+            min-width: 220px;
+            height: 8vh;
+            // background: linear-gradient()
+            background:linear-gradient(0deg, #bb37cc 0%, #e870f8 100%);
+            margin: 3vh auto;
+            border-radius: 12px;
+            border: 1px solid #f7b8ff;
+            a {
+                color: #fff;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

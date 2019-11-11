@@ -1,13 +1,13 @@
 import React from 'react'
 import Layout from '../components/layout'
-import LandingBG from '../components/collage'
 
+import Landing from '../components/landing'
 // import indexStyles from './index.module.scss'
 
 const Indexpage = () => {
     return(
         <Layout>
-            <LandingBG/>
+            <Landing/>
         </Layout>
     )
 }

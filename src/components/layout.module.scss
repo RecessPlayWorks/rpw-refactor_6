@@ -1,16 +1,12 @@
+/********container div is a grid *********/
+
 .container {
-    position: relative;
+    // position: relative;
     margin: 0 auto;
     width: 100vw;
     max-width: 1680px;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
-}
-
-.content {
-    /* accounting for 8vh fixed header */
-    margin-top: 8vh;
-    /* keeps content growing downwards */
-    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 8vh auto 8vh;
 }

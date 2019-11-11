@@ -10,7 +10,6 @@ $picH: 50.3vh;
 $picWm: 100vw;
 $picHm: 50vh;
 
-
 .grid {
     width: 100vw;
     min-height: 100vh;
@@ -18,6 +17,7 @@ $picHm: 50vh;
     $img1 0 0 no-repeat,
     $img4 0% 100% no-repeat;
     background-size: $picWm $picHm,$picWm $picHm;
+    // position: absolute;
 }
 
 

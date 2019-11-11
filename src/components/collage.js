@@ -1,8 +1,8 @@
 import React from 'react';
 import collageStyles from './collage.module.scss';
 
-const LandingCollageBG = () => (
+const LandingCollage = () => (
     <div className={collageStyles.grid}></div>
 )
 
-export default LandingCollageBG;
+export default LandingCollage;
