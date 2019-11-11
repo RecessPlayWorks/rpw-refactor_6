@@ -1,5 +1,25 @@
+@import '../styles/variables.css';
+
 .footer {
-    background: black;
+    background: #ec008b;
+    background: var(--rudy-blue);
+    color: var(--rudy-text);
     grid-column: 1;
     grid-row: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    p {
+        font-size: 1rem;
+        // border: 1px dashed orange;
+        margin-bottom: 0;
+    }
+    .icon-container {
+        width: 35vw;
+        // border: 2px solid red;
+        display: flex;
+        img {
+            margin: auto;
+        }
+    }
 }

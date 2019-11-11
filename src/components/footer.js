@@ -1,6 +1,9 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
+import fbIcon from '../images/fb-icon-white.png';
+import instaIcon from '../images/insta-icon-white.png';
+
 import footerStyles from './footer.module.scss';
 
 const Footer = () => {
@@ -8,15 +11,19 @@ const Footer = () => {
     query {
         site {
           siteMetadata {
-            author
+            address
           }
         }
       }
       `)
-      const {author} = data.site.siteMetadata;
+    const {address} = data.site.siteMetadata;
     return (
         <footer className={footerStyles.footer}>
-            <p>created by {author} ©2019</p>
+            <p>{address}</p>
+            <div className={footerStyles.iconContainer}>
+              <img src={fbIcon} alt="facebook-link-icon" />
+              <img src={instaIcon} alt="insta-link-icon" />
+            </div>
         </footer>
     )
 }

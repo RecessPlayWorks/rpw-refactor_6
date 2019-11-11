@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: "RecessPlayWorks",
     author: "RecessPlayworks.com",
-    description: "A place to rest, to play and to work."
+    description: "A place to rest, to play and to work.",
+    address:  "66 Danbury Road Ridgefield"
   },
   plugins: [
     'gatsby-plugin-react-helmet',

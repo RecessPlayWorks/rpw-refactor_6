@@ -2,4 +2,13 @@
     
     --primary-color: rgba(255, 194, 125, 0.8);
     --secondary-color: rgba(16, 104, 63, 0.5);
+    --rudy-grey: #bcbaae;
+    --rudy-pink: #ec008b;
+    --rudy-blue: #bedaec;
+    --rudy-blue-trans: rgba(149, 206, 241, 0.85);
+    
+    --rudy-text: #3f3f3f;
+    --rudy-navy: #1a3b5f;
+    --btn-cta-green: rgb(133, 212, 133); 
+    
 }

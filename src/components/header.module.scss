@@ -7,7 +7,7 @@ https://youtu.be/8QKOaTYvYUA
 
 .header {
     padding: 0 0 3rem;
-    background: var(--primary-color);
+    background: var(--rudy-blue-trans);
     height: 8vh;
     text-align: center;
     position: fixed;
@@ -88,7 +88,7 @@ label {
         width: 10vw;
         border-radius: 2px;
         margin-left: 2vw;
-        filter: drop-shadow(2px 2px 1px rgba(160, 5, 165, 0.6));
+        filter: drop-shadow(1px 1px 1px #000);
     }
     
     span::before, span::after {
@@ -128,7 +128,7 @@ label {
             margin-left: 1vw;
             a {
                 grid-column: 2/ 3;
-               color: #3d3d3d;
+               color: #fff;
                font-size: 2rem;
            }
         }

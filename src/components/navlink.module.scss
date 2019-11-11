@@ -1,5 +1,8 @@
+@import '../styles/variables.css';
+
+
 .link {
-    color: #333;
+    color: var(--rudy-text);
     font-size: 0.8rem;
     line-height: 1;
     margin: 0 0.5rem 0 0;

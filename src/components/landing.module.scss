@@ -1,3 +1,5 @@
+@import '../styles/variables.css';
+
 $img1: url('../images/boy.jpg');
 $img2: url('../images/painting.jpg');
 $img3: url('../images/meeting.jpg');
@@ -43,7 +45,7 @@ main.landing-container {
             margin: 2vh auto;
         }
         .text-container {
-            background: rgba(128, 194, 194, 0.8);
+            background: var(--rudy-pink);
             border-radius: 10px;
             width: 90vw;
             margin: 8vh auto;            
@@ -61,10 +63,10 @@ main.landing-container {
             width: 10vw;
             min-width: 220px;
             height: 8vh;
-            background:linear-gradient(0deg, #bb37cc 0%, #e870f8 100%);
+            background:linear-gradient(180deg,  var(--btn-cta-green) 0%, var(--btn-cta-green) 100%);
             margin: 3vh auto;
-            border-radius: 12px;
-            border: 1px solid #f7b8ff;
+            border-radius: 8px;
+            border: 1px solid #fff;
             a {
                 color: #fff;
                 font-size: 1.5rem;
