@@ -8,7 +8,7 @@ import DirectionsBox from './mapdirections';
 import mapStyles from './gmap.module.scss';
 
 
-class GMap extends Component {
+class Gmap extends Component {
   static defaultProps = {
     center: {
         lat: 41.2906039,
@@ -49,4 +49,4 @@ renderMarkers(map, maps) {
   }
 }
 
-export default GMap;
+export default Gmap;
