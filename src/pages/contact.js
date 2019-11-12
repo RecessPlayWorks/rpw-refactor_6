@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
-import ContactForm from '../components/ContactForm';
+import ContactForm from '../components/contactform';
 
 // import GMap from '../components/GMap'
 
