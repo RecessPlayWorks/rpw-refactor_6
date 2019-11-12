@@ -6,16 +6,10 @@
   text-align: left;
   width: 100vw;
   min-height: 100vh;
-  background: var(--rudy-grey);
+  background: var(--slate-green);
   color: var(--contact-dk-txt);
   text-align: center;
-  h1 {
-    margin: 3vh auto;
-    font-weight: 100;
-    font-size: 4rem;
-    color: #fff;
-    text-transform: uppercase;
-  }
+  
   section.contact-content-container {
     
     margin: auto;

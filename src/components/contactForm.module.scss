@@ -3,19 +3,73 @@
 .form {
     margin: 2vh auto;
     // height: 130vh;
-    width: 80vw;
-    z-index: 120;
-    // background: #ec008b;
-    label {
-      position: static;
+    width: 90vw;
+    height: 80vh; /*TODO: keep? */
+    // background: rgba(236, 0, 138, 0.2);
+    hr.form-border {
+        background: #fff;
+        height: 1px;
+        padding: 0;
+        margin: 0 auto;
+        margin-bottom: 2vh;
     }
-    & input[type=text], input[type=email], textarea {
-      font-size: 1.1rem;
-      font-weight: 100;
+    h1 {
+      margin: 3vh auto;
+      font-weight: 200;
+      font-size: 3rem;
+      color: #fff;
+      text-transform: uppercase;
     }
     p {
-      height: 20px;
-      border: 2px dashed green;
+      margin-bottom: 0;
+      text-align: left;      
+      & > label {
+        text-transform: uppercase;
+        font-weight: 100;
+        color: #e7e7e7;
+        position: relative;
+        letter-spacing: 1px;
+        padding: 0;
+        & input, textarea {
+          opacity: 0;
+          transition: opacity 800ms;
+          border-width: 0;
+          background: var(--slate-green);
+          &:focus {
+            background: var(--slate-green-lt);
+            outline: none;
+            opacity: 1;
+          }
+        }
+        & input[type=text], input[type=email], textarea {
+          // font-size: 1.3rem;
+          font-size: 2rem;
+          color: #fff;
+          font-weight: 100;
+          display: block;
+          width: 100%;
+          height: 10vh;
+        }
+        & textarea {
+          height: 30vh;
+        }
+      }
+      &:last-of-type {
+        text-align: center;
+      }
+      button.btn-submit {
+         width: 40vw;
+         height: 8vh;
+         background: var(--slate-green);
+         color: #fff;
+         font-weight: 200;
+         font-size: 1.3rem;
+         border: 1px solid #fff;
+         border-radius: 4px;
+         &:hover {
+           background: var(--slate-green);
+         }
+      }
     }
 }
 
@@ -26,14 +80,88 @@
 
 @media screen and (min-width: 768px) {
     .form {
-      border: 2px solid red;
-      height: 130vh;
-      width: 80vw;
+      // border: 2px solid red;
+      width: 50vw;
     }
 }
 
 
 /*
+
+/*************************************************/
+/*************************************************/
+/*************iPhone SE to iPad ******************/
+/*************************************************/
+/*************************************************/
+
+
+/*
+@media (min-width: 310px) and (max-width: 767px) {
+ 
+  section.landing-content-container {
+    width: 90vw;
+  }
+   
+    h2 {
+      font-size: 1.5rem;
+    }
+    section.landing-content-container .logo-container {
+      margin: 2vh auto;
+      width: 80vw;
+    } 
+    .logo-container img {
+      width: 100%;
+    }
+  section.landing-content-container .landing-text-container p {
+    font-size: 0.8rem;
+  }
+  .contact-logo-container {
+    width: 80vw;
+  }
+
+  section.map-address-section {
+    width: 100vw;
+  }
+  ⚠️ 😢
+  .map-container {
+    width: 100vw;
+    height: 50vh;
+  }
+  input, textarea {
+    width: 90vw;
+  }
+    footer section p {
+    font-size: 0.5rem;
+    margin-left: 10%;
+    line-height: 1.2;
+  }
+
+ footer .social-icons a img {
+    width: 80%;
+ }
+ .map-info-box {
+   width: 98%;
+ }
+ 
+
+.map-infobox-content { 
+  transform: scale3d(0.5, 0.5, 1) translateY(-2%);
+}
+.map-directions-box {
+  right: 0;
+}
+.map-directions-box svg rect {
+    fill: none;
+}
+
+}
+
+/***********************************************/
+/*************ORIG COMPONENT********************/
+/***********************************************/
+
+/*
+
 const StyledContactForm = styled.form`
   width: 90vw;
   margin: 2vh auto;
