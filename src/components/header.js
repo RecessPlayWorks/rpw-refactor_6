@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import NavLink from './NavLink';
+import NavLink from './navlink';
 
 import headerStyles from './header.module.scss';
 
