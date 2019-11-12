@@ -17,12 +17,12 @@
     text-transform: uppercase;
   }
   section.contact-content-container {
-    border: 2px solid white;
+    
     margin: auto;
     text-align: left;
     width: 100vw;
     min-height: 100vh;
-    // border: 3px dashed orange;
+    border: 3px dashed orange;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 2fr 25vh;

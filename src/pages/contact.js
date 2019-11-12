@@ -1,11 +1,12 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
+import ContactForm from '../components/ContactForm';
 
 // import GMap from '../components/GMap'
 
 import Layout from '../components/layout'
-import rpwDkLogo from '../images/rpw-dk-logo.png';
+// import rpwDkLogo from '../images/rpw-dk-logo.png';
 import contactStyles from './contact.module.scss'
 
 
@@ -21,22 +22,22 @@ const ContactPage = () => {
         }
       }
       `)
-  const { street, town, title } = data.site.siteMetadata;
+  // const { street, town, title } = data.site.siteMetadata;
   return (
     <Layout>
       <main className={contactStyles.contactContainer}>
         <h1>Visit Us!</h1>
         <section className={contactStyles.contactContentContainer}>
-        <div>Map</div>
-        <div>contact</div>
-          <div className={contactStyles.addressLogoContainer}>
+        {/* <div>Map</div> */}
+        <ContactForm/>
+          {/* <div className={contactStyles.addressLogoContainer}>
             <div className={contactStyles.address}>
               <p>{title}</p>
               <p>{street}</p>
               <p>{town}</p>
             </div>
             <img src={rpwDkLogo} alt="recessplayworks logo dark" />
-          </div>
+          </div> */}
         </section>
       </main>
     </Layout>

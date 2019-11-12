@@ -69,7 +69,7 @@ nav.top-nav {
     }
 }
 
-label {
+label.toggler-label {
     position: absolute;
     top: 0;
     left: 0;
@@ -116,7 +116,7 @@ label {
 
 @media screen and (min-width: 768px) {
 
-    label {
+    label.header-label {
         display: none;
     }
     .header {

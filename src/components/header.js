@@ -17,7 +17,7 @@ const Header = () => {
       const {title} = data.site.siteMetadata;
     return (
     <header className={headerStyles.header}>
-      <label htmlFor="toggler" className="toggler-label">
+      <label className={headerStyles.togglerLabel} htmlFor="toggler">
         <span></span>
       </label>
       <input className={headerStyles.toggler} id="toggler" type="checkbox" name="toggler" />

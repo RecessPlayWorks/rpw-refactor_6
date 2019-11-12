@@ -1,15 +1,22 @@
 @import '../styles/variables.css';
 
-.footer {
-    background: #ec008b;
-    background: var(--rudy-blue);
-    color: var(--rudy-text);
-    grid-column: 1;
-    grid-row: 3;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
+.form {
+    margin: 2vh auto;
+    // height: 130vh;
+    width: 80vw;
+    z-index: 120;
+    // background: #ec008b;
+    label {
+      position: static;
+    }
+    & input[type=text], input[type=email], textarea {
+      font-size: 1.1rem;
+      font-weight: 100;
+    }
+    p {
+      height: 20px;
+      border: 2px dashed green;
+    }
 }
 
 
@@ -18,7 +25,11 @@
 /*************************************************/
 
 @media screen and (min-width: 768px) {
-    
+    .form {
+      border: 2px solid red;
+      height: 130vh;
+      width: 80vw;
+    }
 }
 
 

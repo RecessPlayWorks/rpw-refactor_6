@@ -34,7 +34,7 @@ function encode(data) {
 
   return (
       <form
-        // className={formStyles} TODO: fix this
+        className={formStyles.form}
         name="contact"
         method="post"
         action="/thanks/"
@@ -55,7 +55,7 @@ function encode(data) {
             <input type="text" name="name" onChange={handleChange} />
           </label>
         </p>
-        <p>
+         <p>
           <label>
             email:
             <input type="email" name="email" onChange={handleChange} />
@@ -66,7 +66,7 @@ function encode(data) {
             message:
             <textarea type="text" name="message" onChange={handleChange} />
           </label>
-        </p>
+        </p> 
         <p>
           <button className="btn-submit" type="submit">Send</button>
         </p>
