@@ -10,7 +10,7 @@ function encode(data) {
 }
 
 // export default function Contact() {
-const ContactForm = () => {
+const Contactform = () => {
   const [state, setState] = React.useState({})
 
   const handleChange = (e) => {
@@ -76,4 +76,4 @@ const ContactForm = () => {
   )
 }
 
-export default ContactForm;
+export default Contactform;
