@@ -3,7 +3,8 @@ module.exports = {
     title: "RecessPlayWorks",
     author: "RecessPlayworks.com",
     description: "A place to rest, to play and to work.",
-    address:  "66 Danbury Road Ridgefield"
+    street: "66 Danbury Road",
+    town: "Ridgefield, CT 06877"
   },
   plugins: [
     'gatsby-plugin-react-helmet',

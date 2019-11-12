@@ -9,17 +9,21 @@ import footerStyles from './footer.module.scss';
 const Footer = () => {
     const data = useStaticQuery(graphql`
     query {
-        site {
-          siteMetadata {
-            address
-          }
+      site {
+        siteMetadata {
+          street
+          town
         }
       }
+    }
       `)
-    const {address} = data.site.siteMetadata;
+    const {street, town} = data.site.siteMetadata;
     return (
         <footer className={footerStyles.footer}>
-            <p>{address}</p>
+            <div className={footerStyles.address}>
+            <p>{street}</p>
+            <p>{town}</p>
+            </div>
             <div className={footerStyles.iconContainer}>
               <img src={fbIcon} alt="facebook-link-icon" />
               <img src={instaIcon} alt="insta-link-icon" />

@@ -6,12 +6,58 @@
   text-align: left;
   width: 100vw;
   min-height: 100vh;
-  border: 5px dashed coral;
-  background: #e4d8ee;
-  // .contact-logo-container {
-  //   margin: 2vh auto;
-  //   img {
-  //       width: 100%;
-  //   }
-  // }
+  background: var(--rudy-grey);
+  color: var(--contact-dk-txt);
+  text-align: center;
+  h1 {
+    margin: 3vh auto;
+    font-weight: 100;
+    font-size: 4rem;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  section.contact-content-container {
+    border: 2px solid white;
+    margin: auto;
+    text-align: left;
+    width: 100vw;
+    min-height: 100vh;
+    // border: 3px dashed orange;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 2fr 25vh;
+    .address-logo-container{
+      grid-row: 3;
+      // background: white;
+      // border: 1px dashed purple;
+      position: relative;
+      img {
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        /*overriding index.scss*/
+        margin-bottom: 0;
+      }
+      .address {
+        // border: 1px dashed white;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        // background: var(--rudy-navy);
+        height: 25vh;
+        padding: 2vh 1vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+          // display: none;
+        p {
+          color: var (--contact-dk-text);
+            font-size: 1.2rem;
+            /* overriding index.scss */
+            margin-bottom: 0;
+        }
+    }
+    }
+  }
 }
