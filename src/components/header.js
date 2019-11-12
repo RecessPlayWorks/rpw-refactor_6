@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import NavLink from './navlink';
+import Navlink from './navlink';
 
 import headerStyles from './header.module.scss';
 
@@ -22,22 +22,22 @@ const Header = () => {
       </label>
       <input className={headerStyles.toggler} id="toggler" type="checkbox" name="toggler" />
       <h1 id={headerStyles.logoTitle} className={headerStyles.title}>
-        <NavLink to="/" textContent={title} />
+        <Navlink to="/" textContent={title} />
       </h1>
       
       <nav className={headerStyles.topNav}>
         <ul className={headerStyles.navList}>
           <li className={headerStyles.navListItem}>
-            <NavLink activeClassName={headerStyles.activeNavItem} to="/" textContent="Home" />
+            <Navlink activeClassName={headerStyles.activeNavItem} to="/" textContent="Home" />
           </li>
           <li className={headerStyles.navListItem}>
-            <NavLink activeClassName={headerStyles.activeNavItem} to="/about" textContent="About" />
+            <Navlink activeClassName={headerStyles.activeNavItem} to="/about" textContent="About" />
           </li>
           <li className={headerStyles.navListItem}>
-            <NavLink activeClassName={headerStyles.activeNavItem} to="/blog" textContent="Blog" />
+            <Navlink activeClassName={headerStyles.activeNavItem} to="/blog" textContent="Blog" />
           </li>
           <li className={headerStyles.navListItem}>
-            <NavLink activeClassName={headerStyles.activeNavItem} to="/contact" textContent="Contact" />
+            <Navlink activeClassName={headerStyles.activeNavItem} to="/contact" textContent="Contact" />
           </li>
         </ul>
       </nav>
