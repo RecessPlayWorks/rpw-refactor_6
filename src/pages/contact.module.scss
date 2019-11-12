@@ -16,14 +16,18 @@
     text-align: left;
     width: 100vw;
     min-height: 100vh;
-    // border: 3px dashed orange;
+    // border: 1px dashed orange;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 2fr 25vh;
+
+
+    
+    /*contact-form has own styling*/
+
     .address-logo-container{
       grid-row: 3;
       // background: white;
-      // border: 1px dashed purple;
       position: relative;
       img {
         height: 100%;
@@ -51,7 +55,7 @@
             /* overriding index.scss */
             margin-bottom: 0;
         }
-    }
+      }
     }
   }
 }

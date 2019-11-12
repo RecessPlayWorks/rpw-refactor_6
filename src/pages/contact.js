@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 import ContactForm from '../components/form';
 
-// import GMap from '../components/GMap'
+import GMap from '../components/gmap'
 
 import Layout from '../components/layout'
 import rpwDkLogo from '../images/rpw-dk-logo.png';
@@ -27,7 +27,7 @@ const ContactPage = () => {
     <Layout>
       <main className={contactStyles.contactContainer}>
         <section className={contactStyles.contactContentContainer}>
-        {/* <div>Map</div> */}
+        <GMap/>
         <ContactForm/>
            <div className={contactStyles.addressLogoContainer}>
             <div className={contactStyles.address}>

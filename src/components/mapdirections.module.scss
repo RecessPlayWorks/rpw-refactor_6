@@ -1,0 +1,105 @@
+@import '../styles/variables.css';
+
+.map-directions-box {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  border: 1px dashed saddlebrown;
+  height: 20%;
+ }
+ .map-directions-box:hover {
+  cursor: pointer;
+ }
+ .map-directions-box:hover svg rect {
+  fill: #1ad5f6;
+ }
+ 
+/*
+Styles from ref4
+
+ .map-div {
+  height: 70vh; 
+  margin: 1em 0; 
+  border-radius: 0.5em;
+} 
+
+.map-div-container {
+ height: 400px;
+ width: 100vw;
+}
+.map-div-container > div {
+ height: 400px;
+ width: 100vw;
+ border: 1px solid green; 
+
+}
+.map-container {
+ position: relative;
+}
+.map-info-box { **SVG! 
+ width: 80%;
+ height: 20%;
+ border: 1px solid navy; 
+ position: absolute;
+ top: 1%;
+ right: 1%;
+}
+.directions-icon {
+ transform: translateX(15%);
+}
+.directions-icon:hover {
+ fill: white;
+}
+
+.map-directions-box {
+ position: absolute;
+ top: 2%;
+ right: 2%;
+ border: 1px dashed saddlebrown;
+ height: 20%;
+}
+.map-directions-box:hover {
+ cursor: pointer;
+}
+.map-directions-box:hover svg rect {
+ fill: #1ad5f6;
+}
+
+
+/*********PHONES************
+
+
+  section.map-address-section {
+    width: 100vw;
+  }
+  .map-container {
+    width: 100vw;
+    height: 50vh;
+  }
+  input, textarea {
+    width: 90vw;
+  }
+    footer section p {
+    font-size: 0.5rem;
+    margin-left: 10%;
+    line-height: 1.2;
+  }
+
+ footer .social-icons a img {
+    width: 80%;
+ }
+ .map-info-box {
+   width: 98%;
+ }
+ 
+
+.map-infobox-content { 
+  transform: scale3d(0.5, 0.5, 1) translateY(-2%);
+}
+.map-directions-box {
+  right: 0;
+}
+.map-directions-box svg rect {
+    fill: none;
+}
+*/
