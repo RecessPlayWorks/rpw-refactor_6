@@ -32,7 +32,7 @@ const Header = () => {
           </li>
           <hr/>
           <li className={headerStyles.navListItem}>
-            <Navlink activeClassName={headerStyles.activeNavItem} to="/about" textContent="About" />
+            <Navlink activeClassName={headerStyles.activeNavItem} to="/photos" textContent="Photos" />
           </li>
           <hr/>
           <li className={headerStyles.navListItem}>

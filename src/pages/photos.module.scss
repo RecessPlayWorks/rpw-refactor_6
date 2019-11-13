@@ -1,0 +1,28 @@
+@import '../styles/variables.css';
+
+.photos-container {
+    background: var(--rudy-grey);
+    grid-row: 2;
+    text-align: center;
+    width: 100vw;
+    height: 200vh;
+    min-height: 100vh;
+    // padding-top: 2vh;
+    h1 {
+        color: #fff;
+        font-weight: 200;
+        margin-top: 3vh;
+        font-size: 3rem;
+    }
+}
+
+
+/*************************************************/
+/************* iPad and larger  ******************/
+/*************************************************/
+
+@media screen and (min-width: 768px) {
+    main.landing-container {
+        opacity: 1;
+    }
+}
