@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import GoogleMapReact from "google-map-react";
 
 import rpwIcon from '../images/ga-pin-street.png';
-import GMapInfoBox from './mapinfobox';
+// import GMapInfoBox from './mapinfobox';
 import DirectionsBox from './mapdirections';
 
 import mapStyles from './gmap.module.scss';
@@ -42,7 +42,6 @@ renderMarkers(map, maps) {
           yesIWantToUseGoogleMapApiInternals
         >
         </GoogleMapReact>
-        <GMapInfoBox/>
         <DirectionsBox/> 
       </div>
     );

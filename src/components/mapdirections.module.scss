@@ -4,14 +4,19 @@
   position: absolute;
   top: 2%;
   right: 2%;
-  border: 1px dashed saddlebrown;
   height: 20%;
+  svg {
+    height: 100%;
+    rect {
+      fill: var(--slate-green);
+    }
+  }
  }
  .map-directions-box:hover {
   cursor: pointer;
  }
  .map-directions-box:hover svg rect {
-  fill: #1ad5f6;
+  fill: var(--slate-green-lt);
  }
  
 /*

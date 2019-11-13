@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import Navlink from './navlink';
 
+import Navlink from './navlink';
 import headerStyles from './header.module.scss';
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
           }
         }
       }
-      `)
+    `)
       const {title} = data.site.siteMetadata;
     return (
     <header className={headerStyles.header}>
@@ -24,7 +24,7 @@ const Header = () => {
       <h1 id={headerStyles.logoTitle} className={headerStyles.title}>
         <Navlink to="/" textContent={title} />
       </h1>
-      
+    
       <nav className={headerStyles.topNav}>
         <ul className={headerStyles.navList}>
           <li className={headerStyles.navListItem}>

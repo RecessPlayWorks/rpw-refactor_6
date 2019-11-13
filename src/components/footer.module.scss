@@ -11,7 +11,7 @@
     align-items: center;
     .address {
         p {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
             /* overriding index.scss */
             margin-bottom: 0;
             font-weight: bold;
@@ -19,7 +19,6 @@
     }
     .icon-container {
         width: 35vw;
-        // border: 2px solid red;
         display: flex;
         img {
             margin: auto 1vw;
@@ -37,7 +36,7 @@
     .footer {
         justify-content: space-between;
         p {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             margin-left: 2vw;
             margin-bottom: 0;
         }

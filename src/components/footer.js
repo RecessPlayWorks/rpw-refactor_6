@@ -25,8 +25,12 @@ const Footer = () => {
             <p>{town}</p>
             </div>
             <div className={footerStyles.iconContainer}>
-              <img src={fbIcon} alt="facebook-link-icon" />
-              <img src={instaIcon} alt="insta-link-icon" />
+              <a href = "https://www.facebook.com/recessct/?ref=br_rs" target="_blank" rel="noopener noreferrer"> 
+                <img src={fbIcon} alt="facebook-link-icon" />
+              </a>
+              <a href = "https://www.instagram.com/recess_playworks/" target="_blank" rel="noopener noreferrer"> 
+                <img src={instaIcon} alt="insta-link-icon" />
+              </a>
             </div>
         </footer>
     )

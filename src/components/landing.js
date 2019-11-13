@@ -1,12 +1,7 @@
 import React from 'react';
-
 import NavLink from './navlink';
-
 import rpwLogo from '../images/rpw-main-icon-300.jpg';
-
 import landingStyles from './landing.module.scss';
-
-//TODO: change collage to bg here || perhaps the glass menu modal needs to be in layoutStyles > content ??
 
 const Landing = () => (
     <main className={landingStyles.landingContainer}>
