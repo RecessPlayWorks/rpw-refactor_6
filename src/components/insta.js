@@ -14,7 +14,9 @@ const Insta = () => {
         <main className={instaStyles.instaContainer}>
             <section className={instaStyles.instaContentContainer}>
             <h1>Follow us on Instagram...</h1>
-            <h2>@{username}</h2>
+            <a className={instaStyles.instaLink} href="https://instagram.com/recess_playworks"  target="_blank" rel="noopener noreferrer">
+                    @{username}
+                </a>
                 <div className={instaStyles.imgContainer}>
                     {instaPhotos.map(photo=> (
                         <a key={photo.id}  href={`https://instagram.com/p/${photo.id}/`}>
@@ -24,9 +26,6 @@ const Insta = () => {
                         </a>
                     ))}
                 </div>
-                <a href="https://instagram.com/recess_playworks"  target="_blank" rel="noopener noreferrer">
-                    See More on Instagram!
-                </a>
             </section>
         </main>
     )
