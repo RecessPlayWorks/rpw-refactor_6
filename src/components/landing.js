@@ -16,7 +16,7 @@ const Landing = () => (
                 <p>Come join our growing list of people who want to be the first to know all the details!</p>
             </div>
             <button>
-                <NavLink to="/contact/" className="cta-join" activeClassName="" textContent="Contact" />
+                <NavLink to="/contact/" className="cta-join" textContent="Contact" />
             </button> 
         </section>
     </main>
