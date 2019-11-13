@@ -15,9 +15,10 @@ https://youtu.be/8QKOaTYvYUA
     width: 100%;
     height: 8vh;
     grid-row: 1;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
     .title {
         a {
-            color: var(--rudy-text);
+            // color: var(--rudy-text);
             font-size: 1.5rem;
         }
     }
@@ -25,30 +26,60 @@ https://youtu.be/8QKOaTYvYUA
 
 nav.top-nav {
     position: absolute;
-    top: 100%;
+    top: 8vh;
+    height: 92vh;
     text-align: left;
     left: 0;
     background: var(--primary-color);
-    width: 100%;
+    width: 100vw;
     transform: scale3d(1, 0, 1);
     transform-origin: top;
-    transition: transform 400ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+    box-shadow: inset 0 0 30px 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
 }
 
 .nav-list {
     list-style-type: none;
+
+    
+    /*edits*/
+    /* index.scss margin-left: 1.45rem; override */
+    margin: 5vh auto;
+    height: 66.6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    hr {
+        width: 80vw;
+        margin: 0 auto;
+        background: #ccc;
+    }
 }
 
 .nav-list-item {
     margin-left: 0.8rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
+    
+    /*edits*/
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 12vw;
+    text-align: left;
 }
 .nav-list-item a {
     font-size: 2rem;
     text-transform: uppercase;
     opacity: 0;
     transition: opacity 300ms ease-in-out 200ms;
+
+    /*edits*/
+    font-size: 2.3rem;
+    font-weight: 100;
+
+
 }
 
 .nav-list-item:hover {
@@ -57,6 +88,7 @@ nav.top-nav {
 
 .active-nav-item {
     font-weight: bold;
+    text-shadow: 0px 0px 1px #eee;
 }
 
 .toggler  {
@@ -65,15 +97,17 @@ nav.top-nav {
         transform: scale3d(1,1,1);
         a {
             opacity: 1;
+            color: white;
+            font-weight: 100;
         }
     }
 }
-
+/* burger button */
 label.toggler-label {
     position: absolute;
     top: 0;
-    left: 0;
-    margin-left: 0;
+    right: 0;
+    margin-right: 0;
     height: 100%;
     display: flex;
     align-items: center;
@@ -82,12 +116,11 @@ label.toggler-label {
     span {
         position: relative;
         display: block;
-        background: white;
-        height: 5px;
+        height: 0;
         width: 10vw;
         border-radius: 2px;
         margin-left: 2vw;
-        filter: drop-shadow(1px 1px 1px #000);
+        filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
     }
     
     span::before, span::after {
@@ -100,10 +133,10 @@ label.toggler-label {
         position: absolute;
     }
     span::before {
-        bottom: 12px;
+        bottom: 4px;
     }
     span::after {
-        top: 12px;
+        top: 4px;
     }
     
 }
@@ -124,10 +157,13 @@ label.toggler-label {
         grid-template-columns: 1fr auto minmax(540px, 2fr) 1fr;        
         .title {
             margin-bottom: 0;
-            margin-top: 0.5vh;
+            margin-top: 1vh;
             margin-left: 1vw;
             a {
                grid-column: 2/ 3;
+               color: var(--rudy-text);
+               font-size: 1.8rem;
+
            }
         }
         .top-nav {
@@ -137,7 +173,6 @@ label.toggler-label {
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            // border: 1px solid red;
             ul {
                 display: flex;
                 height: 100%;
@@ -147,13 +182,22 @@ label.toggler-label {
                 margin-left: 3rem;
                 color: #fff;
                 display: flex;
+                /*edits*/
                 
+                height: 100%;
+                margin: 0;
+                flex-direction: row;
+                hr {
+                    display: none;
+                }
                 .nav-list-item {
                     margin-top: 2.5vh;
                     margin-left: 1rem;
                     a {
+                        //TODO: some styles aren't triggering
                         opacity: 1;
-                        font-size: 1.1rem;
+                        font-size: 1.4rem;
+                        // color: var(--rudy-text);
                     }
                 }
              }

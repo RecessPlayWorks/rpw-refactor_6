@@ -1,7 +1,7 @@
 @import '../styles/variables.css';
 
 .blog-container {
-    background: var(--primary-color);
+    background: var(--rudy-navy);
     grid-row: 2;
     text-align: left;
     width: 100vw;
@@ -19,7 +19,7 @@
     margin: 1rem 0;
 
     a {
-        background: #f4f4f4;
+        background: #9c9c9c;
         color: #000;
         display: block;
         padding: 1rem;

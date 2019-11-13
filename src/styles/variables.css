@@ -1,6 +1,6 @@
 :root {
     
-    --primary-color: rgba(255, 194, 125, 0.8);
+    --primary-color: rgba(143, 143, 143, 0.3);
     --secondary-color: rgba(16, 104, 63, 0.5);
     --rudy-grey: #bcbaae;
     --rudy-pink: #ec008b;
@@ -17,5 +17,6 @@
     --rudy-text: #3f3f3f;
     --rudy-navy: #1a3b5f;
     --btn-cta-green: rgb(133, 212, 133); 
+    
     
 }

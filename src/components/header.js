@@ -30,12 +30,15 @@ const Header = () => {
           <li className={headerStyles.navListItem}>
             <Navlink activeClassName={headerStyles.activeNavItem} to="/" textContent="Home" />
           </li>
+          <hr/>
           <li className={headerStyles.navListItem}>
             <Navlink activeClassName={headerStyles.activeNavItem} to="/about" textContent="About" />
           </li>
+          <hr/>
           <li className={headerStyles.navListItem}>
             <Navlink activeClassName={headerStyles.activeNavItem} to="/blog" textContent="Blog" />
           </li>
+          <hr/>
           <li className={headerStyles.navListItem}>
             <Navlink activeClassName={headerStyles.activeNavItem} to="/contact" textContent="Contact" />
           </li>
