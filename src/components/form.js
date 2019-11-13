@@ -56,7 +56,6 @@ const Form = () => {
         </label>
       </p>
       <hr className={formStyles.formBorder}/>
-
       <p>
         <label>email*
             <input type="email" name="email" onChange={handleChange} />

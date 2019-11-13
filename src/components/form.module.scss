@@ -2,7 +2,6 @@
 
 .form {
     margin: 2vh auto;
-    // height: 130vh;
     width: 90vw;
     height: 80vh; /*TODO: keep? */
     hr.form-border {
@@ -67,14 +66,15 @@
       button.btn-submit {
          width: 40vw;
          height: 8vh;
-         background: var(--slate-green);
+         background: var(--slate-green-lt);
          color: #fff;
          font-weight: 200;
          font-size: 1.3rem;
          border: 1px solid #fff;
          border-radius: 4px;
          &:hover {
-           background: var(--slate-green-lt);
+           background: var(--slate-green);
+           box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
          }
       }
     }
@@ -91,118 +91,3 @@
       width: 50vw;
     }
 }
-
-
-/*
-
-/*************************************************/
-/*************************************************/
-/*************iPhone SE to iPad ******************/
-/*************************************************/
-/*************************************************/
-
-
-/*
-@media (min-width: 310px) and (max-width: 767px) {
- 
-  section.landing-content-container {
-    width: 90vw;
-  }
-   
-    h2 {
-      font-size: 1.5rem;
-    }
-    section.landing-content-container .logo-container {
-      margin: 2vh auto;
-      width: 80vw;
-    } 
-    .logo-container img {
-      width: 100%;
-    }
-  section.landing-content-container .landing-text-container p {
-    font-size: 0.8rem;
-  }
-  .contact-logo-container {
-    width: 80vw;
-  }
-
-  section.map-address-section {
-    width: 100vw;
-  }
-  ⚠️ 😢
-  .map-container {
-    width: 100vw;
-    height: 50vh;
-  }
-  input, textarea {
-    width: 90vw;
-  }
-    footer section p {
-    font-size: 0.5rem;
-    margin-left: 10%;
-    line-height: 1.2;
-  }
-
- footer .social-icons a img {
-    width: 80%;
- }
- .map-info-box {
-   width: 98%;
- }
- 
-
-.map-infobox-content { 
-  transform: scale3d(0.5, 0.5, 1) translateY(-2%);
-}
-.map-directions-box {
-  right: 0;
-}
-.map-directions-box svg rect {
-    fill: none;
-}
-
-}
-
-/***********************************************/
-/*************ORIG COMPONENT********************/
-/***********************************************/
-
-/*
-
-const StyledContactForm = styled.form`
-  width: 90vw;
-  margin: 2vh auto;
-  
-  & input[type=text], input[type=email], textarea {
-    font-size: 1.1rem;
-    font-weight: 100;
-  }
-  p {
-    text-align: left;
-    width: 90vw;
-  }
-  label {
-    font-size: 0.9rem;
-  }
-  input, textarea {
-    display: block;
-    height: 8vh;
-  }
-
- textarea {
-    height: 20vh;
- }
- p:last-of-type {
-   text-align: center;
- }
- button.btn-submit {
-    width: 40vw;
-    height: 8vh;
-    margin: 2vh auto;
-    background: #6c8a6c;
-    color: #fff;
-    font-weight: 200;
-    font-size: 1.3rem;
- }
-`;
-*/
