@@ -8,6 +8,8 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -22,17 +24,27 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: "images",
+        path: "images"
+      }
+    },
+    
+    {
       resolve: 'gatsby-source-contentful',
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
     },
-
+    {
+      resolve: 'gatsby-source-instagram',
+      options: {
+        username: 'recess_playworks'
+      }
+    },
     'gatsby-plugin-sass',
-    
-    'gatsby-plugin-sharp',
-
     {
       resolve: 'gatsby-transformer-remark',
       options: {

@@ -2,13 +2,14 @@ import React from 'react'
 import Layout from '../components/layout'
 import photosStyles from './photos.module.scss'
 
+import Insta from '../components/insta'
+
 const PhotosPage = () => {
     return (
         <Layout>
             <main className={photosStyles.photosContainer}>
                 <section className={photosStyles.photosContentContainer}>
-                    <h1>Our Pics from Instagram...</h1>
-                    
+                    <Insta/>
                 </section>
             </main>
         </Layout>
