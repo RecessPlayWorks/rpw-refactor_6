@@ -12,8 +12,8 @@ $picH: 50.3vh;
 /* mobile values for bg images height & width*/
 /* PIC Wm "mobile" ****/
 $picWm: 100vw;
-// $picHm: 40vh;
-$picHm: 35vh;
+$picHm: 40vh;
+
 
 /**** header row1 ****/
 /**** main row2 ****/
@@ -25,7 +25,7 @@ main.landing-container {
     text-align: center;
     width: 100vw;
     
-    height: 180vh;
+    height: 200vh;
     min-height: 100vh;
     /* to adjust for collage images in wide screens*/
     max-width: 1680px;
@@ -103,7 +103,7 @@ main.landing-container {
         $img4 0% 50% no-repeat,
         $img5 100% 100% no-repeat,
         $img6 0% 100% no-repeat;
-        background-size: $picW $picH,$picW $picH,$picW $picH,$picW $picH,$picW $picH;
+        background-size: $picW $picH;
 
         section.landing-content-container { /* wraps logo, txtbox & button */
             width: 80%;
