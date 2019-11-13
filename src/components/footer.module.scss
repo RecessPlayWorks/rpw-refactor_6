@@ -1,8 +1,7 @@
 @import '../styles/variables.css';
 
 .footer {
-    background: #ec008b;
-    background: var(--rudy-blue);
+    background: var(--rudy-blue-trans);
     color: var(--rudy-text);
     grid-column: 1;
     grid-row: 3;

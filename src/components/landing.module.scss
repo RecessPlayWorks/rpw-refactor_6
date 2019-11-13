@@ -20,9 +20,6 @@ $picHm: 40vh;
 /**** footer row3 ****/
 
 main.landing-container {
-    /* edit: main seems to slip underneath fixed header*/
-    margin-top: 1vh;
-
     grid-row: 2;
     text-align: center;
     width: 100vw;

@@ -1,13 +1,12 @@
 @import '../styles/variables.css';
 
 .blog-container {
-    background: var(--rudy-navy);
+    background: #e2b690;
     grid-row: 2;
     text-align: left;
     width: 100vw;
     height: 200vh;
     min-height: 100vh;
-    // border: 5px dashed lightseagreen;
     h1 {
         // text-align: center;
         font-weight: 400;
@@ -27,7 +26,7 @@
     margin: 1rem 0;
 
     a {
-        background: #9c9c9c;
+        background: rgba(255, 255, 255, 0.4);
         color: #000;
         display: block;
         padding: 1rem;
@@ -45,3 +44,21 @@
         font-style: italic;
     }
 }
+
+
+/*************************************************/
+/************* iPad and larger  ******************/
+/*************************************************/
+
+@media screen and (min-width: 768px) {
+    .blog-container {
+        width: 100vw;
+  
+      padding: 2vh auto;
+      section.blog-content-container {
+        width: 70vw;
+        margin: 0 auto;
+  
+      }
+    }
+  }

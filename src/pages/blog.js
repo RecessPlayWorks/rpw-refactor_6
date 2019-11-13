@@ -27,6 +27,8 @@ const BlogPage = () => {
     <Layout>
       {/* PROBLEMATIC styling */}
       <main className={blogStyles.blogContainer}>
+      <section className={blogStyles.blogContentContainer}>
+
         <h1>Our Story...</h1>
         <ol className={blogStyles.posts}>
           {data.allContentfulBlogPost.edges.map((item, idx) => (
@@ -39,6 +41,7 @@ const BlogPage = () => {
           ))}
 
         </ol>
+        </section>
       </main>
     </Layout>
   )
