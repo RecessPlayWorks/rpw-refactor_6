@@ -13,7 +13,7 @@ const Insta = () => {
     return (
         <main className={instaStyles.instaContainer}>
             <section className={instaStyles.instaContentContainer}>
-            <h1>Follow us on Instagram...</h1>
+            <h1>Follow us on Instagram!</h1>
             <a className={instaStyles.instaLink} href="https://instagram.com/recess_playworks"  target="_blank" rel="noopener noreferrer">
                     @{username}
                 </a>
