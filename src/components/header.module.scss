@@ -7,7 +7,7 @@ https://youtu.be/8QKOaTYvYUA
 
 .header {
     padding: 0 0 3rem;
-    background: var(--rudy-blue-trans);
+    background: var(--muted-green);
     height: 8vh;
     text-align: center;
     position: fixed;
@@ -30,7 +30,8 @@ nav.top-nav {
     height: 92vh;
     text-align: left;
     left: 0;
-    background: var(--primary-color);
+    background: var(--foggy-grey-trans);
+    
     width: 100vw;
     transform: scale3d(1, 0, 1);
     transform-origin: top;
@@ -43,8 +44,6 @@ nav.top-nav {
 
 .nav-list {
     list-style-type: none;
-
-    
     /*edits*/
     /* index.scss margin-left: 1.45rem; override */
     margin: 5vh auto;

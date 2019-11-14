@@ -1,7 +1,10 @@
 @import '../styles/variables.css';
 
 .photos-container {
-    background: linear-gradient(35deg, var(--insta-pink)0%, var(--insta-pink-lt)70% );
+    // background: linear-gradient(35deg, var(--insta-pink)0%, var(--insta-pink-lt)70% );
+    background: linear-gradient(35deg, var(--muted-pink)0%, var(--colorB)70% );
+    
+    // background: var(--muted-pink);
 
     grid-row: 2;
     text-align: center;

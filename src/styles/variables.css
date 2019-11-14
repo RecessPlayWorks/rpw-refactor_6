@@ -21,5 +21,15 @@
     
     --insta-pink: rgb(194, 119, 131);
     --insta-pink-lt: rgb(216, 178, 185);
+
+    --muted-pink:#FFE4DC;
+
+    --colorB: rgb(187, 159, 159);
+    --muted-green:#93BCB0;
+    
+    --foggy-grey-trans: rgba(143, 143, 143, 0.3);
+    
+    --banana-cream: #f3d4ba;
+
     
 }

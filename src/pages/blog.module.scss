@@ -1,7 +1,8 @@
 @import '../styles/variables.css';
 
 .blog-container {
-    background: #e2b690;
+    background: #f3d4ba;
+    background: var(--banana-cream);
     grid-row: 2;
     text-align: left;
     width: 100vw;
@@ -10,7 +11,7 @@
     
     h1 {
         color: #fff;
-        font-weight: 200;
+        font-weight: 300;
         margin-top: 3vh;
         font-size: 3rem;
         margin: 3vh auto;
