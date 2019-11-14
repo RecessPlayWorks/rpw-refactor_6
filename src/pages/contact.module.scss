@@ -11,7 +11,7 @@
   text-align: center;
   
   section.contact-content-container {
-    margin: auto;
+    margin: 2vh auto;
     text-align: left;
     width: 100vw;
     min-height: 100vh;
@@ -64,7 +64,6 @@
         .address {
           left: 50%;
           width: 330px;
-          // border: 1px dashed darkblue;
           -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
         }

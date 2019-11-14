@@ -14,13 +14,17 @@
         margin-top: 3vh;
         font-size: 3rem;
     }
-    .insta-content-container {
+    .insta-content-container { /*section*/
+        // border: 2px dashed blue;
+        // max-width: 940px;
+        margin: 1vh auto;
+        height: 100%;
         a.insta-link {
             color: rgb(82, 82, 65);
             font-size: 2rem;
         }
         .img-container {
-            width: 95vw;
+            width: 100%;
             margin: 2vh auto;
             // border: 2px solid yellow;
             display: flex;
@@ -41,7 +45,6 @@
                     /*in case it overlaps another picture*/
                     z-index: 10;
                 }
-
             }
         }
     }
@@ -53,7 +56,13 @@
 /*************************************************/
 
 @media screen and (min-width: 768px) {
-    main.insta-container {
-        opacity: 1;
+    .insta-container {
+      width: 100vw;
+      padding: 2vh auto;
+      .insta-content-container {
+        // border: 2px dashed blue;
+        width: 70vw;
+        margin: 0 auto;
+      }
     }
-}
+  }

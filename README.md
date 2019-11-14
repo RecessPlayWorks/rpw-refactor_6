@@ -13,4 +13,24 @@ TODO: https://www.gatsbyjs.org/docs/add-seo-component/
 
 Fix SEO COMP
 
-TODO: fix collage in ipad views
+TODO: Google Analytics
+
+TODO: menu lines
+
+TODO: media query cleanup
+
+TODO: instagram icon cleanup
+
+TODO: twitter icon
+
+TODO: menu border-radius and margin-top adjust
+
+TODO: hover: on photospage> instagram link
+
+TODO: contentful: delete blogs
+
+TODO: CONTACT US! should be moved to the top 
+
+TODO: FIX INPUT ANIMATION
+
+TODO: FIX ACTIVE LINK emphasis

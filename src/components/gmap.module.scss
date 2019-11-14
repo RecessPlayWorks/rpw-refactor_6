@@ -12,8 +12,9 @@
 /*************************************************/
 
 @media screen and (min-width: 768px) {
-  div.map-container {
-    width: 50vw;
+  .map-container {
+    max-width: 500px;
+    max-height: 500px;
     margin: 0 auto;
   }
 }
