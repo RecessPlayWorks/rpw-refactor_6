@@ -1,7 +1,7 @@
 @import '../styles/variables.css';
 
 .blog-container {
-    background: #f3d4ba;
+    
     background: var(--banana-cream);
     grid-row: 2;
     text-align: left;
@@ -10,7 +10,7 @@
     min-height: 100vh;
     
     h1 {
-        color: #fff;
+        color: rgb(190, 190, 190);
         font-weight: 300;
         margin-top: 3vh;
         font-size: 3rem;

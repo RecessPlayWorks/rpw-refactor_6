@@ -8,16 +8,15 @@
     width: 100vw;
     height: 200vh;
     min-height: 100vh;
-    // padding-top: 2vh;
     h1 {
-        color: #fff;
+        color: var(--muted-green-dk);
         font-weight: 200;
         margin-top: 3vh;
         font-size: 3rem;
     }
     .insta-content-container {
         a.insta-link {
-            color: rgb(143, 255, 231);
+            color: rgb(82, 82, 65);
             font-size: 2rem;
         }
         .img-container {

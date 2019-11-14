@@ -2,9 +2,9 @@
 
 .photos-container {
     // background: linear-gradient(35deg, var(--insta-pink)0%, var(--insta-pink-lt)70% );
-    background: linear-gradient(35deg, var(--muted-pink)0%, var(--colorB)70% );
+    // background: linear-gradient(35deg, var(--muted-pink)0%, var(--colorC) 70% );
     
-    // background: var(--muted-pink);
+    background: var(--muted-pink);
 
     grid-row: 2;
     text-align: center;
@@ -13,10 +13,11 @@
     min-height: 100vh;
     // padding-top: 2vh;
     h1 {
-        color: #fff;
-        font-weight: 200;
-        margin-top: 3vh;
-        font-size: 3rem;
+        // color: rgb(199, 199, 199);
+        // color: red;
+        // font-weight: 200;
+        // margin-top: 3vh;
+        // font-size: 3rem;
     }
 }
 
