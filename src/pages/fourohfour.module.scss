@@ -27,6 +27,12 @@
         img, button,p {
             margin: 2vh auto;
         }
+        & > p {
+            margin: 2vh 5vw;
+            font-size: 1.5rem;
+            line-height: 1.2;
+            color: #1d1d1d;
+        }
         button  {
             display: block;
             border-radius: 4px;
@@ -44,7 +50,6 @@
                 font-size: 1.8rem;
                 font-weight: 100;
                 color: #fff;
-                // margin: 2vh auto;
             }
         }
     }
