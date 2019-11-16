@@ -27,8 +27,6 @@ TODO: menu border-radius and margin-top adjust
 
 TODO: hover: on photospage> instagram link
 
-TODO: contentful: delete blogs
-
 TODO: CONTACT US! should be moved to the top 
 
 TODO: FIX INPUT ANIMATION
