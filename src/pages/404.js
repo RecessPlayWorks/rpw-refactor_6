@@ -16,8 +16,7 @@ const NotFound= () => (
         <img src={fourohfourDog} alt="dog" />
         <p>Well, this is awkward...</p>
         <p>You've arrived at a place that doesn't exist.</p>
-        <p>If you there is an issue, please don't hesitate to contact us and we'll get back to you.</p>
-
+        <p>If you think there is an issue, please don't hesitate to contact us and we'll get back to you!</p>
         <button className={fourOhFourStyles.fourOhFourBtn}>
           <Link to="/contact/">Contact</Link>
         </button>
