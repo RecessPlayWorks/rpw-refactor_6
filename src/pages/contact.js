@@ -6,23 +6,33 @@ import ContactForm from '../components/form';
 import Gmap from '../components/gmap'
 
 import Layout from '../components/layout'
-import rpwDkLogo from '../images/rpw-dk-logo.png';
 import contactStyles from './contact.module.scss'
+
 
 
 const ContactPage = () => {
   const data = useStaticQuery(graphql`
-    query {
-        site {
-          siteMetadata {
-            street
-            town
-            title
+  query {
+    site {
+      siteMetadata {
+        street
+        town
+        title
+      }
+    }
+    file(relativePath: { eq: "rpw-dk-logo.png" }) {
+      sharp: childImageSharp {
+         fixed (width: 327) {
+           srcWebp
           }
         }
       }
-      `)
+    }
+    `)
+  
   const { street, town, title } = data.site.siteMetadata;
+  const {srcWebp} = data.file.sharp.fixed;
+  // console.log("fixed: ", srcWebp)
   return (
     <Layout>
       <main className={contactStyles.contactContainer}>
@@ -35,7 +45,7 @@ const ContactPage = () => {
               <p>{street}</p>
               <p>{town}</p>
             </div>
-            <img src={rpwDkLogo} alt="recessplayworks logo dark" />
+            <img src={srcWebp} alt="recessplayworks logo dark" />
           </div>
         </section>
       </main>

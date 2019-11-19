@@ -24,12 +24,15 @@
       grid-row: 3;
       position: relative;
       img {
+        // display: none;
         height: 100%;
         position: absolute;
         bottom: 0;
         left: 0;
         /*overriding index.scss*/
         margin-bottom: 0;
+        // height: 400px;
+        // width: 300px;
       }
       .address {
         position: absolute;

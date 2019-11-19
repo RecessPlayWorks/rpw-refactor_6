@@ -18,7 +18,9 @@ class Gmap extends Component {
   };
 
 renderMarkers(map, maps) {
-    let marker = new maps.Marker({
+
+// eslint-disable-next-line
+let marker = new maps.Marker({
       position: {
         lat: 41.2906039,
         lng: -73.4952177

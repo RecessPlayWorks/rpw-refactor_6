@@ -34,3 +34,31 @@ TODO: FIX INPUT ANIMATION
 TODO: FIX ACTIVE LINK emphasis
 
 TODO: classname="cta-join" - edit this
+
+TODO: passive-event-listener --scrolling 
+https://developers.google.com/web/tools/lighthouse/audits/passive-event-listeners?utm_source=lighthouse&utm_medium=devtools
+
+TODO: fix menu header on ipad/ ipad mini
+
+TODO: deal with images
+
+------
+import { Img } from "gatsby-image"
+import styled from "styled-components"
+
+const StyledImg = styled(Img)`
+  display: block;
+  margin: 0 auto;
+
+  picture {
+    // picture styles
+  }
+
+------
+
+## issues
+
+DeprecationWarning: OutgoingMessage.prototype._headers is deprecated is a problem with node 12.0.0
+
+https://stackoverflow.com/questions/56697360/how-to-fix-node12388-dep0066-deprecationwarning-outgoingmessage-prototype
+
